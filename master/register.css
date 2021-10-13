@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: "Goudy Old Style";
+    color: white;
+    font-size: 1.2rem;
+}
+
+body, html{
+    height: 100%;
+}
+
+#header{
+    display: flex;
+    background-color: black;
+    height: 12vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#home{
+    font-family: "Old English Text MT";
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.logo{
+    margin: 0px 10px;
+}
+
+#logoImg{
+    height: 65px;
+    width: 65px;
+    margin-right: 5px;
+}
+
+.nav{
+    margin : 0px 10px;
+    padding: 30px 0px; 
+}
+
+.nav:hover{
+    transition: 0.5s;
+    background-color: #ae1e1e;
+}
+
+.nav a{
+    padding: 20px 10px;
+}
+
+.nav-merchandise{
+    margin : 0px 10px;
+    padding: 30px 0px; 
+    position: relative;
+    display: block;
+}
+
+.nav-merchandise a{
+    padding: 20px 10px;
+}
+
+.nav-merchandise:hover{
+    transition: 0.5s;
+    background-color: #ae1e1e;
+}
+
+.merchandise-dropdown{
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: black;
+    padding: 5px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.menu-merchandise{
+    padding: 10px 0px;
+}
+
+.menu-merchandise:hover{
+    transition: 0.5s;
+    background-color: #ae1e1e;
+}
+
+.nav-merchandise:hover .merchandise-dropdown{
+    display: block;
+}
+
+.regisnav{
+    margin : 0px 30px;
+    position: absolute;
+    right: 0;
+}
+
+.regisnav a{
+    background-color: #ae1e1e;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.regisnav a:hover{
+    padding: 15px 25px;
+}
+
+.burgernav{
+    display: none;
+}
+
+.burger{
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+.content{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/doto2_homepage_content2.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    border-style: solid;
+    border-color: gray;
+    padding: 50px;
+    background-color: rgb(56, 56, 56);
+}
+
+#username{
+    color: black;
+}
+
+#email{
+    color: black;
+}
+
+#password{
+    color: black;
+}
+
+#region{
+    color: black;
+}
+
+#region option{
+    color: black;
+}
+
+#dob{
+    color: black;
+}
+
+#register-button{
+    background-color: #ae1e1e;
+    margin: 0px 70px;
+}
+
+#register-button:hover{
+    cursor: pointer;
+    border-color: goldenrod;
+}
+
+#errornotif{
+    margin-top: 10px;
+    color: red;
+    font-size: 1rem;
+    width: 236px;
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    height: 12vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sosmed img{
+    height: 30px;
+    width: 30px;
+}
+
+.copyright p{
+    font-size: 1rem;
+}
+
+@media screen and (max-width:800px){
+
+
+    .burgernav{
+        display: block;
+        position: absolute;
+        right: 0;
+        margin: 20px 30px;
+    }
+
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        padding-top: 20px;
+    }
+
+    .logo{
+        margin-bottom: 24.5px;
+    }
+
+    .nav, .nav-merchandise{
+        position: relative;
+        width: 100%;
+        background-color: black;
+        margin: 0px;
+        display: none;
+    }
+
+    .nav a{
+        padding-right: 700px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .regisnav{
+        position: relative;
+        width: 100%;
+        background-color: black;
+        margin: 0px;
+        padding: 30px 0px; 
+        display: inline-block;
+        display: none;
+    }
+
+    .regisnav:hover{
+        background-color: #ae1e1e;
+    }
+
+    .regisnav a{
+        background-color: inherit;
+        padding: 20px 10px;
+        border-radius: 0px;
+        transition: 0s;
+    }
+    
+    .regisnav a:hover{
+        padding: 20px 10px;
+    }
+
+    .merchandise-dropdown{
+        margin-top: 30px;
+        display: none;
+        position: relative;
+        background-color: black;
+        padding: 5px;
+        z-index: 1;
+        flex-wrap: wrap;
+    }
+
+    .menu-merchandise a{
+        padding-right: 700px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .nav.responsive{
+        display: block;
+    }
+    .nav-merchandise.responsive{
+        display: block;
+    }
+    .regisnav.responsive{
+        display: block;
+    }
+}

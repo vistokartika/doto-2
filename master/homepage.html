@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2</title>
+    <link rel="icon" href="Assets/favdoto2.ico">
+    <link rel="stylesheet" href="homepage.css">
+    <link href="//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/78d7bdc55148aaa3307a1e8ad735c40f?family=Goudy+Old+Style" rel="stylesheet" type="text/css"/>
+    <script src="Jquery.js"></script>
+</head>
+<body>
+
+    <!-- Viriyaputra Lawijaya - 2301866845
+    Martin Jason Alfredo - 2301889073
+    Benedictus Visto Kartika - 2301910026 -->
+
+
+    <div id="header">
+        <div class="logo">
+            <a id="home" href="homepage.html"><img id="logoImg" src="Assets/Doto2-Logo.png" alt="Logo doto2">DOTO 2</a>
+        </div>
+        <div class="nav" id="navrespon1">
+            <a href="heroes.html">Heroes</a>
+        </div>
+        <div class="nav" id="navrespon4">
+            <a href="gameplay.html">Gameplay</a>
+        </div>
+        <div class="nav-merchandise" id="navrespon2">
+            <a href="#">Merchandise</a>
+            <div class="merchandise-dropdown">
+                <div class="menu-merchandise">
+                    <a href="apparels.html">Apparels</a>
+                </div>
+                <div class="menu-merchandise">
+                    <a href="collectibles.html">Collectibles</a>
+                </div>
+            </div>
+        </div>
+        <div class="regisnav" id="navrespon3">
+            <a href="register.html">Register for Free</a>
+        </div>
+
+        <a class="burgernav" href="#" onclick="responsive()">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </a>
+
+    </div>
+    <div id="content">
+        <div class="content1">
+            <p id="judulcontent1">Doto 2</p>
+            <p id="deskripsicontent1">The Legendary MOBA games you won't ever regret Join millions of player in the Battle Of The Ancients with brand new tactic and strategy to discover. It is completely Free to Play, register your account now.</p>
+            <a href="register.html">Register</a>
+        </div>  
+        <div class="content2">
+
+            <button id="previous"><</button>
+
+            <div class="slider-content2">
+                <div id="container-content2">
+                    <img src="Assets/doto2_homepage_image_slider2.jpg" alt="Slider Image 1">
+                    <img src="Assets/doto2_homepage_image_slider.jpg" alt="Slider Image 2">
+                    <img src="Assets/doto2_homepage_image_slider3.jpg" alt="Slider image 3">
+                </div>
+            </div>
+
+            <button id="next">></button>
+            
+            <p id="content2-text">“Our enemy is crushed and our victory, assured. Strategically, this one’s in the bag!”</p>
+            <p id="content2-text2">- Tresden, The Legion Commander</p>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="sosmed">
+            <a href="https://www.facebook.com/"> <img src="Assets/logo_facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/"> <img id="insta" src="Assets/logo_instagram.png" alt="Logo Instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>© Doto and the Doto logo are trademarks and/or registered trademarks of Sunib Corporation. 2021 Sunib Corporation, all rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        let next = $('#next')
+        let previous = $('#previous')
+        let containerContent2 = $('#container-content2')
+        let position = 0
+
+        containerContent2.css({
+            left: position + "%"
+        })
+
+        next.on('click', ()=>{
+            if (position<200) {
+                position += 100
+            } else {
+                position = 0
+            }
+
+            containerContent2.css({
+                left: -position + "%"
+            })
+        })
+
+        previous.on('click', ()=>{
+            if (position>0) {
+                position -= 100
+            } else {
+                position = 200
+            }
+
+            containerContent2.css({
+                left: -position + "%"
+            })
+        })
+
+        next.on('mouseover', ()=>{
+            next.css({
+                'background-color' : '#ae1e1e'
+            })
+        })
+
+        next.on('mouseout', ()=>{
+            next.css({
+                'background-color' : 'gray'
+            })
+        })
+
+        previous.on('mouseover', ()=>{
+            previous.css({
+                'background-color' : '#ae1e1e'
+            })
+        })
+
+        previous.on('mouseout', ()=>{
+            previous.css({
+                'background-color' : 'gray'
+            })
+        })
+    </script>
+
+    <script src="register&respons.js"></script>
+
+</body>
+</html>

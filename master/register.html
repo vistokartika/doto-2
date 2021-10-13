@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 Register</title>
+    <link rel="icon" href="Assets/favdoto2.ico">
+    <link rel="stylesheet" href="register.css">
+    <link href="//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT" rel="stylesheet"
+        type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/78d7bdc55148aaa3307a1e8ad735c40f?family=Goudy+Old+Style" rel="stylesheet"
+        type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a id="home" href="homepage.html"><img id="logoImg" src="Assets/Doto2-Logo.png" alt="Logo doto2">DOTO 2</a>
+        </div>
+        <div class="nav" id="navrespon1">
+            <a href="heroes.html">Heroes</a>
+        </div>
+        <div class="nav" id="navrespon4">
+            <a href="gameplay.html">Gameplay</a>
+        </div>
+        <div class="nav-merchandise" id="navrespon2">
+            <a href="#">Merchandise</a>
+            <div class="merchandise-dropdown">
+                <div class="menu-merchandise">
+                    <a href="apparels.html">Apparels</a>
+                </div>
+                <div class="menu-merchandise">
+                    <a href="collectibles.html">Collectibles</a>
+                </div>
+            </div>
+        </div>
+        <div class="regisnav" id="navrespon3">
+            <a href="register.html">Register for Free</a>
+        </div>
+
+        <a class="burgernav" href="#" onclick="responsive()">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </a>
+    </div>
+
+    <div class="content">
+
+        <div class="form-container">
+            <form id= "register-form" action="homepage.html" onsubmit="registerData(event)">
+                Username
+                <br>
+                <input type="text" id="username">
+                <br>
+                Email
+                <br>
+                <input type="text" id="email">
+                <br>
+                Password
+                <br>
+                <input type="password" id="password">
+                <br>
+                Region
+                <br>
+                <select id="region">
+                    <option value="">None</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="America">America</option>
+                    <option value="Africa">Africa</option>
+                </select>
+                <br>
+                Date of Birth
+                <br>
+                <input type="date" id="dob">
+                <br>
+                <br>
+                <button type="submit" id="register-button">Register</button>
+                <div id="errornotif"></div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="sosmed">
+            <a href="https://www.facebook.com/"> <img src="Assets/logo_facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/"> <img id="insta" src="Assets/logo_instagram.png"
+                    alt="Logo Instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>© Doto and the Doto logo are trademarks and/or registered trademarks of Sunib Corporation. 2021 Sunib
+                Corporation, all rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script src="register&respons.js"></script>
+
+</body>
+</html>
