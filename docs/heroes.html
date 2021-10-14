@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 Heroes</title>
+    <link rel="icon" href="Assets/favdoto2.ico">
+    <link rel="stylesheet" href="heroes.css">
+    <link href="//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT" rel="stylesheet" type="text/css"/>
+    <link href="//db.onlinewebfonts.com/c/78d7bdc55148aaa3307a1e8ad735c40f?family=Goudy+Old+Style" rel="stylesheet" type="text/css"/>
+    <script src="Jquery.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <a id="home" href="homepage.html"><img id="logoImg" src="Assets/Doto2-Logo.png" alt="Logo doto2">DOTO 2</a>
+        </div>
+        <div class="nav" id="nav-active">
+            <a href="heroes.html">Heroes</a>
+        </div>
+        <div class="nav" id="navrespon4">
+            <a href="gameplay.html">Gameplay</a>
+        </div>
+        <div class="nav-merchandise" id="navrespon2">
+            <a href="#">Merchandise</a>
+            <div class="merchandise-dropdown">
+                <div class="menu-merchandise">
+                    <a href="apparels.html">Apparels</a>
+                </div>
+                <div class="menu-merchandise">
+                    <a href="collectibles.html">Collectibles</a>
+                </div>
+            </div>
+        </div>
+        <div class="regisnav" id="navrespon3">
+            <a href="register.html">Register for Free</a>
+        </div>
+
+        <a class="burgernav" href="#" onclick="heroesResponsive()">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </a>
+
+    </div>
+
+    <div class="content">
+        <div class="hero">
+            <div class="hero-split">
+                <img src="Assets/legioncommander_pic.png" alt="Legion Commander">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Legion Commander</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id ="lc1" src="Assets/legion_commander_skill1.png" alt="Overwhelming Even">
+                        </div>
+                        <div class="skill">
+                            <img id ="lc2" src="Assets/legion_commander_skill2.png" alt="Press The Defense">
+                        </div>
+                        <div class="skill">
+                            <img id ="lc3" src="Assets/legion_commander_skill3.png" alt="Moment of Coward">
+                        </div>
+                        <div class="skill">
+                            <img id ="lc4" src="Assets/legion_commander_skill4.png" alt="Gladiator">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="lcHistory">
+                            <p>Marching across the battlefield, Legion Commander challenges lone enemies in single combat. Each duel she wins increases the power of her attacks, until at last she can become a relentless one-woman army.</p>
+                        </div>
+                        <div id="lcDesc1">
+                            <h3>OVERWHELMING EVENS</h3>
+                            <p>Turns the enemies' numbers against them, dealing damage and granting you bonus movement speed per unit or per hero. Deals bonus damage to illusions and summoned units as a percent of their current health.</p>
+                        </div>
+                        <div id="lcDesc2">
+                            <h3>PRESS THE DEFENSE</h3>
+                            <p>Removes debuffs and disables from the target friendly unit, and grants bonus attack speed and health regen for a short time. DISPEL TYPE: Strong Dispel</p>
+                        </div>
+                        <div id="lcDesc3">
+                            <h3>MOMENT OF COWARD</h3>
+                            <p>When attacked, Legion Commander has a chance to immediately counterattack with bonus lifesteal.</p>
+                        </div>
+                        <div id="lcDesc4">
+                            <h3>GLADIATOR</h3>
+                            <p>Legion Commander and the target enemy hero are forced to attack each other for a short duration. Neither hero can use items or abilities. If either hero dies during the duration, the hero winning the Duel gains permanent bonus damage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-split">
+                <img src="Assets/juggernaut_pic.png" alt="Juggernaut">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Juggernaut</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id="jugger1" src="Assets/juggernaut_skill1.png" alt="Sword Fury">
+                        </div>
+                        <div class="skill">
+                            <img id="jugger2" src="Assets/juggernaut_skill2.png" alt="Healing Wart">
+                        </div>
+                        <div class="skill">
+                            <img id="jugger3" src="Assets/juggernaut_skill3.png" alt="Sword Dance">
+                        </div>
+                        <div class="skill">
+                            <img id="jugger4" src="Assets/juggernaut_skill4.png" alt="Omnivora">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="juggerHistory">
+                            <p>In a flurry of slashes, Juggernaut cuts down his foes. Sprinting and spinning into battle with reckless abandon, and nearly invincible once he is able to begin his assault.</p>
+                        </div>
+                        <div id="juggerDesc1">
+                            <h3>SWORD FURY</h3>
+                            <p>Causes a bladestorm of destructive force around Juggernaut, rendering him immune to magic and dealing damage to nearby enemy units. DISPEL TYPE: Basic Dispel</p>
+                        </div>
+                        <div id="juggerDesc2">
+                            <h3>HEALING WART</h3>
+                            <p>Summons a Healing Ward which heals all nearby allied units, based on their max health. The Healing Ward moves at 350 movement speed after being summoned. Lasts 25.0 seconds.</p>
+                        </div>
+                        <div id="juggerDesc3">
+                            <h3>SWORD DANCE</h3>
+                            <p>Gives Juggernaut a chance to deal critical damage on each attack.</p>
+                        </div>
+                        <div id="juggerDesc4">
+                            <h3>OMNIVORA</h3>
+                            <p>Juggernaut leaps towards the target enemy units, and then slashes the target and other nearby enemy units at an increased attack rate. Juggernaut is invulnerable for the duration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-split">
+                <img src="Assets/crystal_maiden_pic.png" alt="Crystal Maiden">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Crystal Maiden</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id="cm1" src="Assets/crystal_maiden_skill1.png" alt="Keristal Nova">
+                        </div>
+                        <div class="skill">
+                            <img id="cm2" src="Assets/crystal_maiden_skill2.png" alt="Frostlick">
+                        </div>
+                        <div class="skill">
+                            <img id="cm3" src="Assets/crystal_maiden_skill3.png" alt="Arcane Feel">
+                        </div>
+                        <div class="skill">
+                            <img id="cm4" src="Assets/crystal_maiden_skill4.png" alt="Freezing Lawn">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="cmHistory">
+                            <p>Able to keep her allies supplied with mana as she slows down enemies to ensure a kill, Crystal Maiden is a helpful addition to any team.</p>
+                        </div>
+                        <div id="cmDesc1">
+                            <h3>KERISTAL NOVA</h3>
+                            <p>A burst of damaging frost slows enemy movement and attack rate in the targeted area.</p>
+                        </div>
+                        <div id="cmDesc2">
+                            <h3>FROSTLICK</h3>
+                            <p>Encases an enemy unit in ice, prohibiting movement and attack, while dealing damage over time. Lasts 10.0 seconds on creeps level 6 or lower.</p>
+                        </div>
+                        <div id="cmDesc3">
+                            <h3>ARCANE FEEL</h3>
+                            <p>Gives additional mana regeneration to all friendly units on the map. This bonus is increased for Crystal Maiden.</p>
+                        </div>
+                        <div id="cmDesc4">
+                            <h3>FREEZING LAWN</h3>
+                            <p>CHANNELED - Surrounds Crystal Maiden with random icy explosions that slow enemies and deal massive damage. Grants bonus armor while channeling. Lasts 10.0 seconds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero">
+            <div class="hero-split">
+                <img src="Assets/phantomassassin_pic.png" alt="Phantom Assassin">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Phantom Assassin</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id ="pa1" src="Assets/phantom_assassin_skill1.png" alt="Stifling Knife">
+                        </div>
+                        <div class="skill">
+                            <img id ="pa2" src="Assets/phantom_assassin_skill2.png" alt="Shadow Strike">
+                        </div>
+                        <div class="skill">
+                            <img id ="pa3" src="Assets/phantom_assassin_skill3.png" alt="Burem">
+                        </div>
+                        <div class="skill">
+                            <img id ="pa4" src="Assets/phantom_assassin_skill4.png" alt="Coup De Gores">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="paHistory">
+                            <p>The moment she finds her prey, Phantom Assassin strikes. Instantly closing in on a target, she effortlessly dodges attacks as she relentlessly cuts away at her foe.</p>
+                        </div>
+                        <div id="paDesc1">
+                            <h3>STIFLING KNIFE</h3>
+                            <p>Throws a dagger slowing the enemy unit's movement speed, dealing 65+25% of Phantom Assassin's attack damage as physical damage and applying attack effects from items and abilities.</p>
+                        </div>
+                        <div id="paDesc2">
+                            <h3>SHADOW STRIKE</h3>
+                            <p>Teleports to a unit, friendly or enemy, and grants bonus attack speed while attacking if it's an enemy unit.</p>
+                        </div>
+                        <div id="paDesc3">
+                            <h3>BUREM</h3>
+                            <p>Phantom Assassin focuses inward, increasing her ability to evade enemy attacks. Can be activated to blur her body, causing her to be impossible to see until near enemy heroes. Stacks diminishingly with other sources of Evasion.</p>
+                        </div>
+                        <div id="paDesc4">
+                            <h3>COUP DE GORES</h3>
+                            <p>Phantom Assassin refines her combat abilities, gaining a chance of delivering a devastating critical strike to enemy units. Stifling Dagger shares the same critical strike chance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-split">
+                <img src="Assets/shadowfiend_pic.png" alt="Shadow Fiend">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Shadow Fiend</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id="sf1" src="Assets/shadowfiend_skill1.png" alt="Shadow Razer">
+                        </div>
+                        <div class="skill">
+                            <img id="sf2" src="Assets/shadowfiend_skill2.png" alt="Necroministry">
+                        </div>
+                        <div class="skill">
+                            <img id="sf3" src="Assets/shadowfiend_skill3.png" alt="Presence of the evil lord">
+                        </div>
+                        <div class="skill">
+                            <img id="sf4" src="Assets/shadowfiend_skill4.png" alt="Requiem of life">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="sfHistory">
+                            <p>Capturing souls from every kill he makes, Shadow Fiend is always gathering his power. Every assault, each carefully aimed raze that kills an enemy.</p>
+                        </div>
+                        <div id="sfDesc1">
+                            <h3>SHADOW RAZER</h3>
+                            <p>Shadow Fiend razes the ground directly in front of him, dealing damage to enemy units in the area. Adds a stacking damage amplifier on the target that causes the enemy to take bonus Shadow Raze damage per stack.</p>
+                        </div>
+                        <div id="sfDesc2">
+                            <h3>NECROMINISTRY</h3>
+                            <p>Shadow Fiend steals the soul from units he kills, gaining bonus damage. On death, he releases 40% of them from bondage.</p>
+                        </div>
+                        <div id="sfDesc3">
+                            <h3>PRESENCE OF THE EVIL LORD</h3>
+                            <p>Shadow Fiend's presence reduces the armor of nearby enemies.</p>
+                        </div>
+                        <div id="sfDesc4">
+                            <h3>REQUIEM OF LIFE</h3>
+                            <p>Shadow Fiend gathers his captured souls to release them as lines of demonic energy. Units near Shadow Fiend when the souls are released can be damaged by several lines of energy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-split">
+                <img src="Assets/zeus_pic.png" alt="Zeus">
+                <div class="hero-container">
+                    <div class="hero-title">
+                        <h2>Zeus</h2>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill">
+                            <img id="zeus1" src="Assets/zeus_skill1.png" alt="Arc Thunder">
+                        </div>
+                        <div class="skill">
+                            <img id="zeus2" src="Assets/zeus_skill2.png" alt="Thunder Bolt">
+                        </div>
+                        <div class="skill">
+                            <img id="zeus3" src="Assets/zeus_skill3.png" alt="Static Lawn">
+                        </div>
+                        <div class="skill">
+                            <img id="zeus4" src="Assets/zeus_skill4.png" alt="Thundergod's Anger">
+                        </div>
+                    </div>
+                    <div class="skill-desc">
+                        <div id="zeusHistory">
+                            <p>None can hide from Zeus, whether he's calling down a bolt to reveal the surroundings, sending an arc coursing through his nearest enemies, or summoning a terrifying volley of lightning upon all enemies.</p>
+                        </div>
+                        <div id="zeusDesc1">
+                            <h3>ARC THUNDER</h3>
+                            <p>Hurls a bolt of lightning that leaps through nearby enemy units.</p>
+                        </div>
+                        <div id="zeusDesc2">
+                            <h3>THUNDER BOLT</h3>
+                            <p>Calls down a bolt of lightning to strike an enemy unit, causing damage and a mini-stun. When cast, Lightning Bolt briefly provides unobstructed vision and True Sight around the target in a 750 radius.</p>
+                        </div>
+                        <div id="zeusDesc3">
+                            <h3>STATIC LAWN</h3>
+                            <p>Zeus shocks any enemy hit by his abilities, causing damage proportional to their current health.</p>
+                        </div>
+                        <div id="zeusDesc4">
+                            <h3>THUNDERGOD'S ANGER</h3>
+                            <p>Strikes all enemy heroes with a bolt of lightning, no matter where they may be. Thundergod's Wrath also provides True Sight around each hero struck.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+        <div class="sosmed">
+            <a href="https://www.facebook.com/"> <img src="Assets/logo_facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/"> <img id="insta" src="Assets/logo_instagram.png" alt="Logo Instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>© Doto and the Doto logo are trademarks and/or registered trademarks of Sunib Corporation. 2021 Sunib Corporation, all rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        //legion commander
+        let lcHistory = $('#lcHistory')
+        let lc1 = $('#lc1')
+        let lcDesc1 = $('#lcDesc1')
+        let lc2 = $('#lc2')
+        let lcDesc2 = $('#lcDesc2')
+        let lc3 = $('#lc3')
+        let lcDesc3 = $('#lcDesc3')
+        let lc4 = $('#lc4')
+        let lcDesc4 = $('#lcDesc4')
+
+        lc1.on('mouseover', ()=>{
+            lcHistory.css({
+                'display' : 'none'
+            })
+            lcDesc1.css({
+                'display': 'block'
+            })
+        })
+        lc1.on('mouseout', ()=>{
+            lcHistory.css({
+                'display' : 'block'
+            })
+            lcDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        lc2.on('mouseover', ()=>{
+            lcHistory.css({
+                'display' : 'none'
+            })
+            lcDesc2.css({
+                'display': 'block',
+            })
+        })
+        lc2.on('mouseout', ()=>{
+            lcHistory.css({
+                'display' : 'block'
+            })
+            lcDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        lc3.on('mouseover', ()=>{
+            lcHistory.css({
+                'display' : 'none'
+            })
+            lcDesc3.css({
+                'display': 'block'
+            })
+        })
+        lc3.on('mouseout', ()=>{
+            lcHistory.css({
+                'display' : 'block'
+            })
+            lcDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        lc4.on('mouseover', ()=>{
+            lcHistory.css({
+                'display' : 'none'
+            })
+            lcDesc4.css({
+                'display': 'block'
+            })
+        })
+        lc4.on('mouseout', ()=>{
+            lcHistory.css({
+                'display' : 'block'
+            })
+            lcDesc4.css({
+                'display': 'none'
+            })
+        })
+
+        //jugger
+        let juggerHistory = $('#juggerHistory')
+        let jugger1 = $('#jugger1')
+        let juggerDesc1 = $('#juggerDesc1')
+        let jugger2 = $('#jugger2')
+        let juggerDesc2 = $('#juggerDesc2')
+        let jugger3 = $('#jugger3')
+        let juggerDesc3 = $('#juggerDesc3')
+        let jugger4 = $('#jugger4')
+        let juggerDesc4 = $('#juggerDesc4')
+
+        jugger1.on('mouseover', ()=>{
+            juggerHistory.css({
+                'display' : 'none'
+            })
+            juggerDesc1.css({
+                'display': 'block'
+            })
+        })
+        jugger1.on('mouseout', ()=>{
+            juggerHistory.css({
+                'display' : 'block'
+            })
+            juggerDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        jugger2.on('mouseover', ()=>{
+            juggerHistory.css({
+                'display' : 'none'
+            })
+            juggerDesc2.css({
+                'display': 'block',
+            })
+        })
+        jugger2.on('mouseout', ()=>{
+            juggerHistory.css({
+                'display' : 'block'
+            })
+            juggerDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        jugger3.on('mouseover', ()=>{
+            juggerHistory.css({
+                'display' : 'none'
+            })
+            juggerDesc3.css({
+                'display': 'block'
+            })
+        })
+        jugger3.on('mouseout', ()=>{
+            juggerHistory.css({
+                'display' : 'block'
+            })
+            juggerDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        jugger4.on('mouseover', ()=>{
+            juggerHistory.css({
+                'display' : 'none'
+            })
+            juggerDesc4.css({
+                'display': 'block'
+            })
+        })
+        jugger4.on('mouseout', ()=>{
+            juggerHistory.css({
+                'display' : 'block'
+            })
+            juggerDesc4.css({
+                'display': 'none'
+            })
+        })
+
+        //crystal maiden
+        let cmHistory = $('#cmHistory')
+        let cm1 = $('#cm1')
+        let cmDesc1 = $('#cmDesc1')
+        let cm2 = $('#cm2')
+        let cmDesc2 = $('#cmDesc2')
+        let cm3 = $('#cm3')
+        let cmDesc3 = $('#cmDesc3')
+        let cm4 = $('#cm4')
+        let cmDesc4 = $('#cmDesc4')
+
+        cm1.on('mouseover', ()=>{
+            cmHistory.css({
+                'display' : 'none'
+            })
+            cmDesc1.css({
+                'display': 'block'
+            })
+        })
+        cm1.on('mouseout', ()=>{
+            cmHistory.css({
+                'display' : 'block'
+            })
+            cmDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        cm2.on('mouseover', ()=>{
+            cmHistory.css({
+                'display' : 'none'
+            })
+            cmDesc2.css({
+                'display': 'block',
+            })
+        })
+        cm2.on('mouseout', ()=>{
+            cmHistory.css({
+                'display' : 'block'
+            })
+            cmDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        cm3.on('mouseover', ()=>{
+            cmHistory.css({
+                'display' : 'none'
+            })
+            cmDesc3.css({
+                'display': 'block'
+            })
+        })
+        cm3.on('mouseout', ()=>{
+            cmHistory.css({
+                'display' : 'block'
+            })
+            cmDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        cm4.on('mouseover', ()=>{
+            cmHistory.css({
+                'display' : 'none'
+            })
+            cmDesc4.css({
+                'display': 'block'
+            })
+        })
+        cm4.on('mouseout', ()=>{
+            cmHistory.css({
+                'display' : 'block'
+            })
+            cmDesc4.css({
+                'display': 'none'
+            })
+        })
+
+
+        //phantom assassin
+        let paHistory = $('#paHistory')
+        let pa1 = $('#pa1')
+        let paDesc1 = $('#paDesc1')
+        let pa2 = $('#pa2')
+        let paDesc2 = $('#paDesc2')
+        let pa3 = $('#pa3')
+        let paDesc3 = $('#paDesc3')
+        let pa4 = $('#pa4')
+        let paDesc4 = $('#paDesc4')
+
+        pa1.on('mouseover', ()=>{
+            paHistory.css({
+                'display' : 'none'
+            })
+            paDesc1.css({
+                'display': 'block'
+            })
+        })
+        pa1.on('mouseout', ()=>{
+            paHistory.css({
+                'display' : 'block'
+            })
+            paDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        pa2.on('mouseover', ()=>{
+            paHistory.css({
+                'display' : 'none'
+            })
+            paDesc2.css({
+                'display': 'block',
+            })
+        })
+        pa2.on('mouseout', ()=>{
+            paHistory.css({
+                'display' : 'block'
+            })
+            paDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        pa3.on('mouseover', ()=>{
+            paHistory.css({
+                'display' : 'none'
+            })
+            paDesc3.css({
+                'display': 'block'
+            })
+        })
+        pa3.on('mouseout', ()=>{
+            paHistory.css({
+                'display' : 'block'
+            })
+            paDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        pa4.on('mouseover', ()=>{
+            paHistory.css({
+                'display' : 'none'
+            })
+            paDesc4.css({
+                'display': 'block'
+            })
+        })
+        pa4.on('mouseout', ()=>{
+            paHistory.css({
+                'display' : 'block'
+            })
+            paDesc4.css({
+                'display': 'none'
+            })
+        })
+
+      //shadow fiend
+        let sfHistory = $('#sfHistory')
+        let sf1 = $('#sf1')
+        let sfDesc1 = $('#sfDesc1')
+        let sf2 = $('#sf2')
+        let sfDesc2 = $('#sfDesc2')
+        let sf3 = $('#sf3')
+        let sfDesc3 = $('#sfDesc3')
+        let sf4 = $('#sf4')
+        let sfDesc4 = $('#sfDesc4')
+
+        sf1.on('mouseover', ()=>{
+            sfHistory.css({
+                'display' : 'none'
+            })
+            sfDesc1.css({
+                'display': 'block'
+            })
+        })
+        sf1.on('mouseout', ()=>{
+            sfHistory.css({
+                'display' : 'block'
+            })
+            sfDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        sf2.on('mouseover', ()=>{
+            sfHistory.css({
+                'display' : 'none'
+            })
+            sfDesc2.css({
+                'display': 'block',
+            })
+        })
+        sf2.on('mouseout', ()=>{
+            sfHistory.css({
+                'display' : 'block'
+            })
+            sfDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        sf3.on('mouseover', ()=>{
+            sfHistory.css({
+                'display' : 'none'
+            })
+            sfDesc3.css({
+                'display': 'block'
+            })
+        })
+        sf3.on('mouseout', ()=>{
+            sfHistory.css({
+                'display' : 'block'
+            })
+            sfDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        sf4.on('mouseover', ()=>{
+            sfHistory.css({
+                'display' : 'none'
+            })
+            sfDesc4.css({
+                'display': 'block'
+            })
+        })
+        sf4.on('mouseout', ()=>{
+            sfHistory.css({
+                'display' : 'block'
+            })
+            sfDesc4.css({
+                'display': 'none'
+            })
+        })
+
+
+      //zeus
+      let zeusHistory = $('#zeusHistory')
+        let zeus1 = $('#zeus1')
+        let zeusDesc1 = $('#zeusDesc1')
+        let zeus2 = $('#zeus2')
+        let zeusDesc2 = $('#zeusDesc2')
+        let zeus3 = $('#zeus3')
+        let zeusDesc3 = $('#zeusDesc3')
+        let zeus4 = $('#zeus4')
+        let zeusDesc4 = $('#zeusDesc4')
+
+        zeus1.on('mouseover', ()=>{
+            zeusHistory.css({
+                'display' : 'none'
+            })
+            zeusDesc1.css({
+                'display': 'block'
+            })
+        })
+        zeus1.on('mouseout', ()=>{
+            zeusHistory.css({
+                'display' : 'block'
+            })
+            zeusDesc1.css({
+                'display': 'none'
+            })
+        })
+
+        zeus2.on('mouseover', ()=>{
+            zeusHistory.css({
+                'display' : 'none'
+            })
+            zeusDesc2.css({
+                'display': 'block',
+            })
+        })
+        zeus2.on('mouseout', ()=>{
+            zeusHistory.css({
+                'display' : 'block'
+            })
+            zeusDesc2.css({
+                'display': 'none'
+            })
+        })
+
+        zeus3.on('mouseover', ()=>{
+            zeusHistory.css({
+                'display' : 'none'
+            })
+            zeusDesc3.css({
+                'display': 'block'
+            })
+        })
+        zeus3.on('mouseout', ()=>{
+            zeusHistory.css({
+                'display' : 'block'
+            })
+            zeusDesc3.css({
+                'display': 'none'
+            })
+        })
+
+        zeus4.on('mouseover', ()=>{
+            zeusHistory.css({
+                'display' : 'none'
+            })
+            zeusDesc4.css({
+                'display': 'block'
+            })
+        })
+        zeus4.on('mouseout', ()=>{
+            zeusHistory.css({
+                'display' : 'block'
+            })
+            zeusDesc4.css({
+                'display': 'none'
+            })
+        })
+
+    </script>
+
+    <script src="register&respons.js"></script>
+
+</body>
+</html>

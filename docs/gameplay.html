@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doto 2 Gameplay</title>
+    <link rel="icon" href="Assets/favdoto2.ico">
+    <link rel="stylesheet" href="gameplay.css">
+    <link href="//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT" rel="stylesheet"
+        type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/78d7bdc55148aaa3307a1e8ad735c40f?family=Goudy+Old+Style" rel="stylesheet"
+        type="text/css" />
+    <script src="Jquery.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="logo">
+            <a id="home" href="homepage.html"><img id="logoImg" src="Assets/Doto2-Logo.png" alt="Logo doto2">DOTO 2</a>
+        </div>
+        <div class="nav" id="navrespon1">
+            <a href="heroes.html">Heroes</a>
+        </div>
+        <div class="nav" id="nav-active">
+            <a href="gameplay.html">Gameplay</a>
+        </div>
+        <div class="nav-merchandise" id="navrespon2">
+            <a href="#">Merchandise</a>
+            <div class="merchandise-dropdown">
+                <div class="menu-merchandise">
+                    <a href="apparels.html">Apparels</a>
+                </div>
+                <div class="menu-merchandise">
+                    <a href="collectibles.html">Collectibles</a>
+                </div>
+            </div>
+        </div>
+        <div class="regisnav" id="navrespon3">
+            <a href="register.html">Register for Free</a>
+        </div>
+
+        <a class="burgernav" href="#" onclick="gameplayResponsive()">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div>
+        </a>
+
+    </div>
+
+    <div class="content">
+        <div class="gameplaypic">
+            <div class="gppic">
+                <h3>1. The Ancients</h3>
+                <img id="ancient" src="Assets/doto2_ancient.png" alt="Ancient">
+            </div>
+            <div class="gppic">
+                <h3>2. Towers</h3>
+                <img id="tower" src="Assets/doto2_tower.png" alt="Tower">
+            </div>
+            <div class="gppic">
+                <h3>3. Barracks</h3>
+                <img id="barracks" src="Assets/doto2_barracks.png" alt="Barracks">
+            </div>
+            <div class="gppic">
+                <h3>4. The Creeps</h3>
+                <img id="creep" src="Assets/doto2_creep.png" alt="Creep">
+            </div>
+            <div class="gppic">
+                <h3>5. Roshan</h3>
+                <img id="roshan" src="Assets/doto2_roshan.png" alt="Roshan">
+            </div>
+        </div>
+        <div class="gameplaydesc">
+            <div class="gpdescObj">
+                <h3>Objective</h3>
+                <br>
+                <p> The term ‘Dota’ stands for ‘Defense of the Ancients,’ and that’s precisely what the game is all
+                    about. There are two teams of five players each, with the Radiant occupying the southwestern half of
+                    the map and the Dire occupying the northwestern half. You and the four other players on your team
+                    are tasked with destroying the enemy’s Ancient, which is the central structure in their base, all
+                    while protecting your own.</p>
+                <br>
+                <p> There are three main avenues leading to each base, called the lanes, that are protected by a line of
+                    towers and continually spawning waves of NPC units called creeps. Both teams will essentially spend
+                    most of their time trying to take control of the lanes and the map to eventually push up to the
+                    enemy base.</p>
+                <br>
+                <p> You and the nine other players in the game are each given control of a hero — who all have their own
+                    unique set of attributes, abilities, strengths, and weaknesses — and must team up to get strong
+                    enough to besiege the enemy base and take down their Ancient.</p>
+            </div>
+            <div class="gpdesc1">
+                <h3>The Ancients</h3>
+                <br>
+                <p>The Ancients are the primary objective of the game, as whichever team destroys their enemy’s Ancient wins the game. While they can’t defend themselves, they are protected by two towers of the strongest tier, oh and an army of creeps and heroes too.</p>
+                <br>
+                <p>It should go without saying that taking down an Ancient is no easy feat. You and your team should be able coordinate an effective defense of your own Ancient as well as a plan of attack against that of the enemy if you want to win the game.</p>
+            </div>
+            <div class="gpdesc2">
+                <h3>Towers</h3>
+                <br>
+                <p>Every lane for each side is fortified with three tiers of towers that progressively get stronger the closer they are to a team’s base, as well as a set barracks, often shortened as ‘rax.’</p>
+                <br>
+                <p>The tier one tower is located at the end of each lane near the point where the opposing creep waves meet, the tier two tower is at the halfway point of each lane, while the tier three tower is located above each ramp leading into a team’s base. There is also a fourth tier of two towers that protect each team’s Ancient.</p>
+            </div>
+            <div class="gpdesc3">
+                <h3>Barracks</h3>
+                <br>
+                <p>The barracks are buildings that, when destroyed, will make the opposing creeps in that lane stronger. There are two kinds of barracks, the melee and the ranged, corresponding to the first two types of lane creeps.</p>
+                <br>
+                <p>The Melee Barracks is more robust and is able to slowly regenerate its health, while the Ranged Barracks is easier to take down and has no health regeneration. Barracks are invulnerable until the tier three tower guarding them is destroyed.</p>
+            </div>
+            <div class="gpdesc4">
+                <h3>The Creeps</h3>
+                <br>
+                <p>While the heroes fighting for both teams are the primary driving forces in the war of the Ancients, NPC units called ‘creeps’ form the armies of both sides and populate the map. More than just being a never-ending tide of units clashing in the lanes and besieging towers, creeps are also the primary source of gold and experience for heroes.</p>
+            </div>
+            <div class="gpdesc5">
+                <h3>Roshan</h3>
+                <br>
+                <p>Roshan the Immortal is the most powerful neutral creep in Dota 2, located in a pit in the middle of the northeastern part of the river.</p>
+                <br>
+                <p>Roshan is not like the other neutral creeps that can be easily taken down with a few attacks. He outclasses any hero one-on-one in most situations, and it usually takes an entire team to bring him down. Any attempt to take on Roshan needs the correct timing and approach since he is one of the major deciding factors in the game.</p>
+                <br>
+                <p>A team who can successfully take down Roshan not only earns a sizable bounty of gold and experience, but also a variety of rewards. The first is the Aegis of the Immortal, which is dropped every time Roshan is slain. Whoever holds the Aegis will come back to life with full health and mana once they are killed, though Roshan will reclaim it once he respawns.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="sosmed">
+            <a href="https://www.facebook.com/"> <img src="Assets/logo_facebook.png" alt="Logo Facebook"></a>
+            <a href="https://www.instagram.com/"> <img id="insta" src="Assets/logo_instagram.png"
+                    alt="Logo Instagram"></a>
+        </div>
+        <div class="copyright">
+            <p>© Doto and the Doto logo are trademarks and/or registered trademarks of Sunib Corporation. 2021 Sunib
+                Corporation, all rights reserved.</p>
+        </div>
+    </div>
+
+
+    <script>
+        let ancient = $('#ancient')
+        let gpdescObj = $('.gpdescObj')
+        let gpdesc1 = $('.gpdesc1')
+        let tower = $('#tower')
+        let gpdesc2 = $('.gpdesc2')
+        let barracks = $('#barracks')
+        let gpdesc3 = $('.gpdesc3')
+        let creep = $('#creep')
+        let gpdesc4 = $('.gpdesc4')
+        let roshan = $('#roshan')
+        let gpdesc5 = $('.gpdesc5')
+
+        ancient.on('click', ()=>{
+            gpdescObj.css({
+                'display' : 'none'
+            })
+            gpdesc1.css({
+                'display' : 'block'
+            })
+            gpdesc2.css({
+                'display' : 'none'
+            })
+            gpdesc3.css({
+                'display' : 'none'
+            })
+            gpdesc4.css({
+                'display' : 'none'
+            })
+            gpdesc5.css({
+                'display' : 'none'
+            })
+        })
+
+        tower.on('click', ()=>{
+            gpdescObj.css({
+                'display' : 'none'
+            })
+            gpdesc1.css({
+                'display' : 'none'
+            })
+            gpdesc2.css({
+                'display' : 'block'
+            })
+            gpdesc3.css({
+                'display' : 'none'
+            })
+            gpdesc4.css({
+                'display' : 'none'
+            })
+            gpdesc5.css({
+                'display' : 'none'
+            })
+        })
+
+        barracks.on('click', ()=>{
+            gpdescObj.css({
+                'display' : 'none'
+            })
+            gpdesc1.css({
+                'display' : 'none'
+            })
+            gpdesc2.css({
+                'display' : 'none'
+            })
+            gpdesc3.css({
+                'display' : 'block'
+            })
+            gpdesc4.css({
+                'display' : 'none'
+            })
+            gpdesc5.css({
+                'display' : 'none'
+            })
+        })
+
+        creep.on('click', ()=>{
+            gpdescObj.css({
+                'display' : 'none'
+            })
+            gpdesc1.css({
+                'display' : 'none'
+            })
+            gpdesc2.css({
+                'display' : 'none'
+            })
+            gpdesc3.css({
+                'display' : 'none'
+            })
+            gpdesc4.css({
+                'display' : 'block'
+            })
+            gpdesc5.css({
+                'display' : 'none'
+            })
+        })
+
+        roshan.on('click', ()=>{
+            gpdescObj.css({
+                'display' : 'none'
+            })
+            gpdesc1.css({
+                'display' : 'none'
+            })
+            gpdesc2.css({
+                'display' : 'none'
+            })
+            gpdesc3.css({
+                'display' : 'none'
+            })
+            gpdesc4.css({
+                'display' : 'none'
+            })
+            gpdesc5.css({
+                'display' : 'block'
+            })
+        })
+
+    </script>
+
+    <script src="register&respons.js"></script>
+
+</body>
+
+</html>
